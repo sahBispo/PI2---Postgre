@@ -20,7 +20,8 @@
     
     <header class="header__cor">
         <div class="header__tamanho">
-            <img src="imagens/imagem_nav.png" class="img_nav" alt="Logo marca Fernando Adestra">
+            <!--img src="imagens/imagem_nav.png" class="img_nav" alt="Logo marca Fernando Adestra"-->
+            <img src="{{ url_for('static', filename='img/imagem_nav.png') }}" alt="imagem_nav">
     
         
             <nav class="navbar" style="background-color: #f7f9fa;">
@@ -54,7 +55,8 @@
 
     <main>
         <div class="conteudo_main">
-            <img src="imagens/img4_carroceu.jpeg" alt="Imagem de adestramento de cães">
+            <!--img src="imagens/img4_carroceu.jpeg" alt="Imagem de adestramento de cães"-->
+            <img src="{{ url_for('static', filename='img/img4_carroceu.jpeg') }}" alt="img4_carroceu">
             <div class="texto_main">
                 <h1><strong>Adestramento de cães por Fernando Adestra</strong></h1>
                 <p>O adestramento de cães é essencial para criar um ambiente seguro e harmonioso tanto para o animal quanto para a família. Ele promove o bem-estar físico e mental do cão, melhora a convivência diária e fortalece os laços afetivos. Investir tempo e esforço no adestramento de um cão é recompensador e traz benefícios duradouros para todos os envolvidos.</p>

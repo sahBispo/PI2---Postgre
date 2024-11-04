@@ -20,7 +20,8 @@
     
     <header class="header__cor">
         <div class="header__tamanho">
-            <img src="imagens/imagem_nav.png" class="img_nav" alt="Logo marca Fernando Adestra">
+            <!--img src="imagens/imagem_nav.png" class="img_nav" alt="Logo marca Fernando Adestra"-->
+            <img src="{{ url_for('static', filename='img/imagem_nav.png') }}" alt="imagem_nav">
     
         
             <nav class="navbar" style="background-color: #f7f9fa;">
@@ -50,7 +51,8 @@
     </header>
     <main>
         <section class="trainer-profile">
-            <img src="imagens/img1_carroceu.jpeg" alt="Foto do Adestrador" class="trainer-photo">
+            <!--img src="imagens/img1_carroceu.jpeg" alt="Foto do Adestrador" class="trainer-photo"-->
+            <img src="{{ url_for('static', filename='img/img1_carroceu.jpeg') }}" alt="img1_carroceu">
             
             <h1><strong>Fe Adestra</strong></h1>
                 <p>Se você busca um parceiro comprometido em transformar a convivência com seu cão em algo extraordinário, está no lugar certo. Junte-se a nós nesta jornada de aprendizado mútuo.</p></p>
