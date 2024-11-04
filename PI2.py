@@ -21,14 +21,14 @@ PI2.secret_key = 'teste'
 #)
 #cursor = conn.cursor()
 
-def get_db_connection():
+'''def get_db_connection():
     conn = psycopg2.connect(
         host="localhost",
         database="adestra",
         user="postgres",
         password="admin"
     )
-    return conn
+    return conn'''
 
 # Rota para a página de inical
 @PI2.route('/')
