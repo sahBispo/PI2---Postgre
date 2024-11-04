@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site de adestramento de cães">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="ABRAÃO SOUZA DA SILVA, ANTÔNIO LUIZ XAVIER DA COSTA, ELAINE SOUSA COSTA, JOSIVALDO DE SALES, LIVIA MATIAS DA SILVA, SAMANTA DOS SANTOS BISPO, SARA MOTA SILVA, TAMYRES CAPISTRANO DA SILVA.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--link rel="stylesheet" href="adestramento.css"-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/adestramento.css') }}">
+    <link rel="shortcut icon" href="imagens/dog-face-logo-free-vector.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Fe.adestra </title>
+</head>
+
+
+<body>     
+    
+    <header class="header__cor">
+        <div class="header__tamanho">
+            <img src="imagens/imagem_nav.png" class="img_nav" alt="Logo marca Fernando Adestra">
+    
+        
+            <nav class="navbar" style="background-color: #f7f9fa;">
+
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href='/'>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href='/adestramento'>Adestramento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href='/cadastro'>Cadastro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/login'>Login</a>
+              </li>
+              <!--li class="nav-item">
+                <a class="nav-link" href='/agenda'>Agenda</a>
+              </li-->
+              <li class="nav-item">
+                <a class="nav-link" href='/quem'>Quem é Fernando Adestra</a>
+              </li>
+             
+          </ul>
+        </nav>
+    </header>
+    <main>
+          <div class="video-section">
+              <h1>Adestramento de filhotes</h1>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/VRumcY9iJj0?si=3rDKjXONmSVV39no" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+  
+      
+  
+        
+          <div class="text-section">
+              <h2>Dicas</h2>
+              <ul>
+                <li>
+                    <strong>Reforço Positivo:</strong>
+                    <p>O reforço positivo é uma das técnicas mais eficazes no adestramento canino. Consiste em recompensar o cão quando ele realiza o comportamento desejado. As recompensas podem ser petiscos, elogios ou brincadeiras.</p>
+                    <p><em>Exemplo:</em> Se você quer que seu cão sente, peça que ele faça isso e, assim que ele se sentar, ofereça um petisco e faça um elogio. Isso ajuda o cão a associar o comando “senta” com algo positivo.</p>
+                </li>
+                <li>
+                    <strong>Consistência nos Comandos:</strong>
+                    <p>É importante ser consistente nos comandos e nas ações durante o adestramento. Use sempre as mesmas palavras e sinais para os comandos para que seu cão possa aprender e entender o que você espera dele.</p>
+                    <p><em>Exemplo:</em> Se você usar “deita” para o comando de deitar, use sempre essa palavra. Evite variações como “deitar-se” ou “deite”, pois isso pode confundir o cão.</p>
+                </li>
+                <li>
+                    <strong>Sessões de Treinamento Curtas:</strong>
+                    <p>Os cães, especialmente os filhotes, têm um tempo de atenção limitado. É mais eficaz realizar sessões de treinamento curtas e frequentes do que longas e cansativas.</p>
+                    <p><em>Exemplo:</em> Realize sessões de 5 a 10 minutos, várias vezes ao dia. Isso mantém o cão engajado e interessado no treinamento, além de facilitar a retenção das informações.</p>
+                </li>
+            </ul>
+            
+          </div>
+      </div>
+  </main>
+  
+  <footer> 
+        <div class="footer-content">
+            <div class="footer-text">
+
+            <h3>Fe.Adestra</h3>
+            <p>Copyright © 2024 Projeto Integrador 2 - Eixo Computação - Univesp</p>
+             <div class="social-media-icons">
+               
+                <a href="https://www.youtube.com/@Fe.adestra" target="_blank">
+                    <img src="https://th.bing.com/th/id/OIP.hR6TQma4SWfP-yfQmT5oqgAAAA?rs=1&pid=ImgDetMain" alt="Youtube"
+                        width="30px" height="30px">
+                </a>
+                <a href="https://www.instagram.com/fe.adestra/" target="_blank">
+                    <img src="https://logopng.com.br/logos/instagram-40.png" alt="Instagram" width="30px" height="30px">
+                </a>
+                <a href="https://wa.me/5511962794972?text=Olá,%20gostaria%20de%20mais%20informações!" target="_blank">
+                    <img src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-4096.png"
+                        alt="Whatsapp" width="30px" height="30px">
+                </a>
+    
+        </footer>
+        
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,210 @@
+@media (max-width: 768px) {
+    .header__tamanho, .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .input_header {
+      width: 100%;
+    }
+  
+    .menu_header ul {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .texto_main {
+      max-width: 90%;
+      margin: auto;
+    }
+  
+    .carousel-container {
+      width: 100%;
+    }
+  }
+  
+  /* Header */
+  .header__cor {
+    background-color: #c3e3fd;
+    color: #2f2c79;
+  }
+  
+  .header__tamanho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .menu_header {
+    display: none;
+  }
+  
+  .img_nav {
+    border-radius: 5%;
+    width: 12%;
+  }
+  
+  .menu_header ul {
+    list-style: none;
+  }
+  
+  .menu_header ul li a {
+    color: #2f2c79;
+    background-color: white;
+    text-decoration: none;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 14px 25px;
+  }
+  
+  .menu_header ul li a:hover {
+    background-color: #c3e3fd;
+    transform: scale(1.1);
+  }
+  
+  .cart_header {
+    color: #1b1212;
+  }
+  
+  .cart_header:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  a:focus, button:focus {
+    outline: 2px solid #2f2c79;
+    outline-offset: 2px;
+  }
+  
+  #menuOptions {
+    display: none; /* Inicialmente oculto */
+  }
+  
+  #menuOptions.active {
+    display: block; /* Exibe o menu quando a classe 'active' é adicionada */
+  }
+  
+/*main*/
+/* Estilo para o main */
+main {
+  display: flex; /* Flexbox para melhor alinhamento */
+  justify-content: center; /* Centraliza horizontalmente */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #fff; /* Cor de fundo suave */
+}
+
+/* Estilo para o perfil do adestrador */
+.trainer-profile {
+  max-width: 600px; /* Largura máxima do perfil */
+  background-color: #e5b7923a;  /* Cor de fundo branca */
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para a foto do adestrador */
+.trainer-photo {
+  width: 180px; /* Largura da foto */
+  height: 180px; /* Altura da foto */
+  border-radius: 9px;
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilo para o título do adestrador */
+h1 {
+  font-size: 24px; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+  margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+/* Estilo para o parágrafo de descrição */
+p {
+  font-size: 16px; /* Tamanho da fonte */
+  color: #555; /* Cor do texto */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilo para a lista de certificações */
+ul {
+  list-style-type: none; /* Remove marcadores */
+  padding: 0; /* Remove espaçamento padrão */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+li {
+  font-size: 16px; /* Tamanho da fonte */
+  color: #007bff; /* Cor azul para destaque */
+  margin: 5px 0; /* Espaçamento entre os itens */
+}
+
+/* Estilo para os depoimentos */
+h3 {
+  margin-top: 30px; /* Espaçamento superior */
+  margin-bottom: 10px; /* Espaçamento inferior */
+  color: #333; /* Cor do texto */
+}
+
+blockquote {
+  margin: 15px 0; /* Espaçamento superior e inferior */
+  padding: 10px 20px; /* Espaçamento interno */
+  background-color: #e9ecef; /* Cor de fundo leve */
+  border-left: 5px solid #007bff; /* Borda esquerda */
+  font-style: italic; /* Estilo itálico */
+}
+
+blockquote p {
+  margin: 0; /* Remove margens do parágrafo dentro do bloco */
+  color: #555; /* Cor do texto do depoimento */
+}
+
+
+
+
+
+/* RODAPÉ */
+footer {
+  background-color: #1d1c51;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+}
+
+/* Conteúdo do rodapé */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Texto do rodapé */
+.footer-text {
+  text-align: center;
+  flex: 1;
+}
+
+/* Redes sociais */
+.social-media-icons {
+  display: flex;
+   gap: 10px;
+}
+
+.social-media-icons a {
+  color: #1d1c51;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social-media-icons a:hover {
+  color: #000;
+}
+
+.social-media-icons img {
+  border-radius: 50%;
+
+}
+
+ 

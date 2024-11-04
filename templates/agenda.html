@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site de adestramento de cães">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="ABRAÃO SOUZA DA SILVA, ANTÔNIO LUIZ XAVIER DA COSTA, ELAINE SOUSA COSTA, JOSIVALDO DE SALES, LIVIA MATIAS DA SILVA, SAMANTA DOS SANTOS BISPO, SARA MOTA SILVA, TAMYRES CAPISTRANO DA SILVA.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--link rel="stylesheet" href="agenda.css"-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/agenda.css') }}">
+    <link rel="shortcut icon" href="imagens/dog-face-logo-free-vector.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Fe.adestra </title>
+</head>
+
+
+<body>     
+    
+    <header class="header__cor">
+        <div class="header__tamanho">
+            <img src="imagens/imagem_nav.png" class="img_nav" alt="Logo marca Fernando Adestra">
+    
+        
+            <nav class="navbar" style="background-color: #f7f9fa;">
+
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href='/'>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href='/adestramento'>Adestramento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href='/cadastro'>Cadastro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/login'>Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href='/agenda'>Agenda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href='/quem'>Quem é Fernando Adestra</a>
+              </li>
+             
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+        <main>
+            <section class="add-schedule">
+                <h2>Adicionar Horário Disponível</h2>
+                <form id="add-time-form">
+                    <label for="new-time">Novo Horário:</label>
+                    <input type="text" id="new-time" name="new-time" placeholder="HH:MM - HH:MM" required>
+                    <button type="submit">Adicionar</button>
+                </form>
+            </section>
+        
+          
+        
+            <section class="remove-schedule">
+                <h2>Remover Horário</h2>
+                <form id="remove-time-form">
+                    <label for="time-to-remove">Horário:</label>
+                    <select id="time-to-remove" name="time-to-remove" required>
+                        <!-- Opções de horários disponíveis serão preenchidas aqui -->
+                    </select>
+                    <button type="submit">Remover</button>
+                </form>
+            </section>
+        
+            <section class="booking">
+                <h2>Marcar Horário</h2>
+                <form id="booking-form">
+                    <label for="name">Nome do Cliente:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="dog-name">Nome do Cão:</label>
+                    <input type="text" id="dog-name" name="dog-name" required>
+        
+                    <label for="motivo">Motivo do contato:</label>
+                    <input type="text" id="motivo" name="motivo" required>
+        
+                    <label for="time">Horário:</label>
+                    <select id="time" name="time" required>
+                        <!-- Opções de horários disponíveis serão preenchidas aqui -->
+                    </select>
+        
+                    <button type="submit">Marcar Horário</button>
+                </form>
+            </section>
+        </main>
+        
+
+
+    <footer> 
+        <div class="footer-content">
+            <div class="footer-text">
+
+            <h3>Fe.Adestra</h3>
+            <p>Copyright © 2024 Projeto Integrador 2 - Eixo Computação - Univesp</p>
+             <div class="social-media-icons">
+               
+                <a href="https://www.youtube.com/@Fe.adestra" target="_blank">
+                    <img src="https://th.bing.com/th/id/OIP.hR6TQma4SWfP-yfQmT5oqgAAAA?rs=1&pid=ImgDetMain" alt="Youtube"
+                        width="30px" height="30px">
+                </a>
+                <a href="https://www.instagram.com/fe.adestra/" target="_blank">
+                    <img src="https://logopng.com.br/logos/instagram-40.png" alt="Instagram" width="30px" height="30px">
+                </a>
+                <a href="https://wa.me/5511962794972?text=Olá,%20gostaria%20de%20mais%20informações!" target="_blank">
+                    <img src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-4096.png"
+                        alt="Whatsapp" width="30px" height="30px">
+                </a>
+    
+        </footer>
+        
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,200 @@
+@media (max-width: 768px) {
+    .header__tamanho, .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .input_header {
+      width: 100%;
+    }
+  
+    .menu_header ul {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .texto_main {
+      max-width: 90%;
+      margin: auto;
+    }
+  
+    .carousel-container {
+      width: 100%;
+    }
+  }
+  
+  /* Header */
+  .header__cor {
+    background-color: #c3e3fd;
+    color: #2f2c79;
+  }
+  
+  .header__tamanho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .menu_header {
+    display: none;
+  }
+  
+  .img_nav {
+    border-radius: 5%;
+    width: 12%;
+  }
+  
+  .menu_header ul {
+    list-style: none;
+  }
+  
+  .menu_header ul li a {
+    color: #2f2c79;
+    background-color: white;
+    text-decoration: none;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 14px 25px;
+  }
+  
+  .menu_header ul li a:hover {
+    background-color: #c3e3fd;
+    transform: scale(1.1);
+  }
+  
+  .cart_header {
+    color: #1b1212;
+  }
+  
+  .cart_header:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  a:focus, button:focus {
+    outline: 2px solid #2f2c79;
+    outline-offset: 2px;
+  }
+  
+  #menuOptions {
+    display: none; /* Inicialmente oculto */
+  }
+  
+  #menuOptions.active {
+    display: block; /* Exibe o menu quando a classe 'active' é adicionada */
+  }
+  
+
+/*main agenda*/
+.add-schedule,
+.schedule,
+.remove-schedule,
+.booking {
+    max-width: 600px; /* Largura máxima para as seções */
+    margin: 30px auto; /* Centraliza as seções na página */
+    padding: 20px; /* Espaçamento interno das seções */
+    background-color: #e5b7923a;/* Cor de fundo branca */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+    text-align: center; /* Centraliza os títulos */
+    margin-bottom: 20px; /* Espaçamento inferior dos títulos */
+    color: #333; /* Cor do texto do título */
+}
+
+label {
+    display: block; /* Faz com que os rótulos ocupem toda a largura */
+    margin-bottom: 5px; /* Espaçamento inferior dos rótulos */
+    font-weight: bold; /* Destaca os rótulos */
+}
+
+input[type="text"],
+select {
+    width: 100%; /* Faz com que os campos de entrada ocupem toda a largura */
+    padding: 10px; /* Espaçamento interno dos campos */
+    margin-bottom: 15px; /* Espaçamento inferior dos campos */
+    border: 1px solid #ccc; /* Borda dos campos de entrada */
+    border-radius: 5px; /* Cantos arredondados dos campos de entrada */
+    font-size: 16px; /* Tamanho da fonte dos campos */
+}
+
+button {
+    width: 100%; /* Faz com que o botão ocupe toda a largura */
+    padding: 10px; /* Espaçamento interno do botão */
+    background-color: #28a745; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+    background-color: #218838; /* Cor do botão ao passar o mouse */
+}
+
+ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+ul li {
+    background: #f8f9fa; /* Cor de fundo dos itens da lista */
+    margin: 5px 0; /* Margem entre os itens da lista */
+    padding: 10px; /* Espaçamento interno dos itens da lista */
+    border-radius: 5px; /* Cantos arredondados dos itens da lista */
+}
+
+
+
+
+
+/* RODAPÉ */
+footer {
+    background-color: #1d1c51;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+  }
+  
+  /* Conteúdo do rodapé */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Texto do rodapé */
+  .footer-text {
+    text-align: center;
+    flex: 1;
+  }
+  
+  /* Redes sociais */
+  .social-media-icons {
+    display: flex;
+     gap: 10px;
+  }
+  
+  .social-media-icons a {
+    color: #1d1c51;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .social-media-icons a:hover {
+    color: #000;
+  }
+  
+  .social-media-icons img {
+    border-radius: 50%;
+  
+  }
+  
+   
