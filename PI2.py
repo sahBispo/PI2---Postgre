@@ -4,6 +4,7 @@
 from flask import Flask, request, render_template, redirect, jsonify, session
 #import mysql.connector
 import psycopg2
+from psycopg2 import sql
 
 # A chave secreta é usada para assinar os cookies de sessão, garantindo que não possam ser falsificados ou manipulados por terceiros
 PI2 = Flask(__name__)
@@ -11,25 +12,68 @@ PI2 = Flask(__name__)
 #
 PI2.secret_key = 'teste'
 
-# Conexão com o banco de dados MySQL
-#conn = mysql.connector.connect(
-	#host="localhost",
-    #port=3306,
-    #user="root",
-    #password="admin",
-    #database="adestra"
-#)
-#cursor = conn.cursor()
 
-'''def get_db_connection():
+def get_db_connection():
     conn = psycopg2.connect(
-        host="localhost",
+        host="dpg-cskctudds78s7399k91g-a",
         database="adestra",
-        user="postgres",
-        password="admin"
+        user="adestra_user",
+        password="DxZMLInXvHMdyQTvq50h6Wf55zdxuzBY"
     )
-    return conn'''
+    return conn
 
+# Função para criar as tabelas no banco de dados, se ainda não existirem
+def create_tables():
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # SQL para criar a tabela Tutor
+    create_tutor_table = """
+    CREATE TABLE IF NOT EXISTS Tutor (
+        id_resp SERIAL PRIMARY KEY,
+        Nome VARCHAR(80), 
+        Email VARCHAR(50) UNIQUE,
+        Senha VARCHAR(15), 
+        Endereco VARCHAR(200),
+        Telefone BIGINT,
+        Autoriza_imagem VARCHAR(3),
+        CONSTRAINT autoriza_imagem_check CHECK (Autoriza_imagem IN ('Sim', 'Não'))
+    );
+    """
+
+    # SQL para criar a tabela Animal
+    create_animal_table = """
+    CREATE TABLE IF NOT EXISTS Animal (
+        id_animal SERIAL PRIMARY KEY,
+        Nome VARCHAR(100),
+        Raca VARCHAR(50),
+        idade INT,
+        Sexo VARCHAR(6),
+        Castrado VARCHAR(3),
+        id_resp_animal INT NOT NULL,
+        CONSTRAINT sexo_check CHECK (Sexo IN ('Macho', 'Femea')),
+        CONSTRAINT castrado_check CHECK (Castrado IN ('Sim', 'Não')),
+        FOREIGN KEY (id_resp_animal) REFERENCES Tutor (id_resp)
+    );
+    """
+
+    # Executa os comandos SQL para criar as tabelas
+    try:
+        cursor.execute(create_tutor_table)
+        cursor.execute(create_animal_table)
+        conn.commit()
+        print("Tabelas Tutor e Animal criadas com sucesso.")
+    except Exception as e:
+        print("Erro ao criar tabelas:", e)
+        conn.rollback()
+    finally:
+        cursor.close()
+        conn.close()
+
+# Chama a função de criação de tabelas
+create_tables()
+
+# Definição das rotas
 # Rota para a página de inical
 @PI2.route('/')
 def pagina_inicial():
