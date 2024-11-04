@@ -1,1 +1,1 @@
-web: gunicorn PI2:app
+web: gunicorn PI2:PI2
